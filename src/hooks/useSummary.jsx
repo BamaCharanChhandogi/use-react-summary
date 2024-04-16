@@ -6,8 +6,8 @@ const useSummary = ({ text, words }) => {
   const [summary, setSummary] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const MODEL_NAME = process.env.MODEL_NAME;
-  const API_KEY = process.env.API_KEY;
+  const MODEL_NAME = 'gemini-1.0-pro';
+  const API_KEY ='AIzaSyD8Jgd-lGnC0883Z3lL6qFiz6iz7i7-VC0';
 
   useEffect(() => {
     if (text === "") {
