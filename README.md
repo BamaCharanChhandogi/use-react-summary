@@ -1,20 +1,29 @@
 # use React Summary
 
-This is a React component that allows you to summarize text using the Google Generative AI API. It provides a custom React hook `useSummary` that handles the text summarization process and returns the summarized text in Markdown format.
+![npm version](https://img.shields.io/npm/v/use-react-summary.svg)
+![downloads](https://img.shields.io/npm/dm/use-react-summary.svg)
+![license](https://img.shields.io/npm/l/use-react-summary.svg)
 
+use-react-summary is a powerful React hook that leverages Google Generative AI to provide real-time text summarization. Whether you’re building a content-heavy application or simply need to condense information, this hook simplifies the integration of AI-driven summarization into your React components
+
+## Features
+- **AI-Powered Summarization:** Automatically summarize large blocks of text using advanced AI models from Google Generative AI.
+- **Customizable Output:** Specify the desired summary length with the words parameter for greater control over the output.
+- **Seamless Markdown Integration:** Outputs the summarized text in Markdown format, making it easy to style and render within your React app.
+- **Error Handling:** Built-in error detection and loading states to enhance the user experience.
 ## Installation
 
-You can install this package via npm:
+Install the package via npm:
 ```
 npm install use-react-summary
 ```
 
-## Demo 
-### **Live Demo:** [Try the `useSummary` Hook Demo](https://use-react-summary-demo-site.vercel.app/)
+## Live Demo 
+### [Try the `useSummary` Hook Demo](https://use-react-summary-demo-site.vercel.app/)
 
 ## Usage
 
-Import the `useSummary` hook in your React component:
+To use the `useSummary` hook, follow these steps:
 
 ```jsx
 import React from 'react';
@@ -34,36 +43,36 @@ const MyComponent = () => {
 };
 ```
 
-The `useSummary` hook accepts an object with the following properties:
+### Hook Parameters
 
-- `text` (string, required): The text you want to summarize.
-- `words` (number, optional): The maximum number of words you want in the summary.
+- `text (string, required):` The text you want to summarize.
+- `words (number, optional):` The maximum number of words you want in the summary.
 
-The hook returns an object with the following properties:
+### Returned Values
 
-- `summarizeText` (ReactElement): A React element that renders the summarized text in Markdown format.
-- `isLoading` (boolean): Indicates whether the summarization process is in progress.
-- `error` (string | null): If an error occurs during the summarization process, this property will contain the error message. Otherwise, it will be `null`.
+- `summarizeText (ReactElement):` A React element that renders the summarized text in Markdown format.
+- `isLoading (boolean):` Indicates whether the summarization process is in progress.
+- `error (string | null):` If an error occurs during the summarization process, this property will contain the error message. Otherwise, it will be `null`.
 
 **Requirements**
 
-This component requires the following dependencies:
+This hook requires the following dependencies
 
 - `react`
 - `react-markdown`
 - `@google/generative-ai`
 
-These dependencies are automatically installed when you install the package via npm.
+These will be installed automatically when you install the package.
+
+## Contribute
+
+Contributions are welcome! If you have suggestions, feature requests, or want to report a bug, feel free to open an issue or submit a pull request.
 
 **License**
 -----------------
 This project is licensed under the [LICENSE](LICENSE).
 
-This README file covers the following sections:
-
-- **Installation**: Provides instructions on how to install the package via npm.
-- **Usage**: Explains how to import and use the `useTest` hook in a React component, including the properties it accepts and returns.
-- **Requirements**: Lists the dependencies required by the component.
-- **License**: Mentions that the project is licensed under the MIT License.
-
-Feel free to modify or add any additional sections to the README file as needed.
+## Author
+[Bama Charan Chhandogi](https://www.linkedin.com/in/bamacharanchhandogi/)
+<hr>
+Made with ❤️ for the React community
