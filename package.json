@@ -1,6 +1,6 @@
 {
   "name": "use-react-summary",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "type": "module",
   "description": "A powerful React hook for text summarization using Google's Generative AI API. Easily integrate advanced text summarization capabilities into your React applications.",
   "main": "dist/index.js",
